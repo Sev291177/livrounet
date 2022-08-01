@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Se connecter à Livrounet</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+</head>
+
+<body>
+        <header>
+		 <section class="background_header">
+            <img class="col-6" src="/images/livrounet_couleur.png" alt="logo Livrounet en ecriture puzzle">
+            <aside class="entete" aria-label="description">Le site d'apprentissage par le jeu uniquement pour les enfants</aside>
+            <aside id="compte" aria-label="creation compte">Créer un compte Livrounet</aside>
+			</section>
+        </header>
+        <section class="background">
+            <aside class="Acces"aria-label="acces">
+                <h2>Accès Enfant</h2>
+                <form method ="post" action="nomPagePhp.php">
+                    <p>
+                        <label for="first_name">Votre prénom</label>
+                        <br/>
+                        <input type="text" name="first_name" id="first_name"/>
+                        <br/>
+                        <label for="password">Votre mot de passe</label>
+                        <br/>
+                        <input type="password" name="pass1" id="pass1">
+                    </p>
+                </form>
+            </aside>
+            <aside class="Acces" aria-label="acces">
+                <h2>Accès Parents</h2>
+                <form th:action="@{/}" method="POST" >
+                    <p>
+                        <label for="email">Votre adresse email</label>
+                        <br/>
+                        <input type="email" name="email" id="email"/>
+                        <br/>
+                        <label for="password">Votre mot de passe</label>
+                        <br/>
+                        <input type="password" name="pass2" id="pass2"/>
+                    </p>
+                </form>
+            </aside>
+        </section>
+        <footer>
+            <section class ="piedDePage">
+                <aside class = "information" aria-label="information">Qui sommes nous ?</aside>
+                <aside class = "information"aria-label="information">Nous contacter</aside>
+                <aside class = "information"aria-label="information">Conditions d'utilisation et politique de confidentialité</aside>
+            </section>
+        </footer>
+</body>
+
+</html>

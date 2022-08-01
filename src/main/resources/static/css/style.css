@@ -1,0 +1,171 @@
+/* fonts personnalisé*/
+@font-face {
+    font-family: 'wood_shapesregular';
+    src: url('wood_shapes-webfont.eot');
+    src: url('wood_shapes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('wood_shapes-webfont.woff2') format('woff2'),
+         url('wood_shapes-webfont.woff') format('woff'),
+         url('wood_shapes-webfont.ttf') format('truetype'),
+         url('wood_shapes-webfont.svg#wood_shapesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Elements principaux de la page*/
+body
+{
+    width:100%;
+    height: 100%;
+    margin : auto;
+}
+.background
+{
+    display:flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 223, 252);
+    height: 500px;
+}
+/*Header*/
+header
+{
+    height: 150px;
+    display :flex;
+    flex-direction: column;
+    position: relative;
+}
+.background_header
+{
+    background-color: rgb(208, 223, 252);
+    height: 500px;
+}
+#titrePrincipal
+{
+    position: relative;
+    bottom: 35px;
+    left:15px;
+    font-family:'wood_shapesregular','Times New Roman', Times, serif;
+    font-size: 4.5em;
+    color : rgb(44, 44, 224);
+    text-shadow: 6px 6px 6px rgb(51, 51, 51);
+
+
+}
+.entete
+{
+    position:absolute;
+    top:110px;
+    left: 95px;
+    font-size: 1.5em;
+    font-style: italic;
+
+}
+#compte
+{
+    font-size: 1.2em;
+    position : absolute;
+    right: 20px;
+    bottom:20px;
+    border: thick double #32a1ce;
+    border-radius: 10px;
+    padding :10px;
+    box-shadow: 3px 3px 3px rgb(1, 155, 226);
+    background-color: rgb(137, 224, 250);
+}
+/*Corps*/
+.Acces
+{
+    height : 400px;
+    width: 300px;
+    background-color: cornflowerblue;
+    border : 3px solid black;
+    border-radius: 20px;
+    margin: 50px;
+}
+h2
+{
+    text-align: center;
+}
+
+/*footer*/
+
+.piedDePage
+{
+    background-color: darkslateblue;
+    width:100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.information
+{
+    color:whitesmoke;
+    font-size: 1.1em;
+}
+/* Page2 */
+.form
+{
+    width: 1200px;
+    height : 400px;
+    border: 3px double #32a1ce;
+    padding: 15px;
+    background-color: rgb(137,224,250);
+    box-shadow: 3px 3px 3px rgb(1, 155, 226);
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+}
+.textCreateAccount
+{
+    width:1200px;
+    height:50px;
+    text-align: center ;
+    align-self: flex-start;
+    border: 1px solid black;
+}
+#title_text
+{
+    margin-top: auto;
+    padding-top: auto;
+    font: 34px bold ;
+}
+#asterisk
+{
+    margin-top: 0.1em;
+   font : 26px oblique;
+}
+label
+{
+    font-size : 24px;
+}
+input
+{
+    font-size: x-large;
+}
+select
+{
+    font-size: x-large;
+}
+#form1
+{
+    width:600px;
+    height: 200px;
+    text-align: start;
+    border: 1px solid black;
+    position:relative;
+    align-self: flex-end;
+    align-items: baseline;
+    align-content: space-around;
+
+}
+#form2
+{
+    width:600px;
+    height: 200px;
+    text-align: start;
+    border: 1px solid black;
+    position:relative;
+    align-self: flex-end;
+    align-items: baseline;
+    align-content: space-around;
+}
